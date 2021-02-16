@@ -17,9 +17,9 @@ def file_to_set(filename):
     return words_list
 
 
-def search_set(original, all_turkish_words):
+def search_set(possible_words, all_turkish_words):
     found = []
-    for word in original:
+    for word in possible_words:
         if word in all_turkish_words:
             found.append(word)
     return found
